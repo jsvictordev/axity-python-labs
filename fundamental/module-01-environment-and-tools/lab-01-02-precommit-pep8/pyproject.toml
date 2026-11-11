@@ -1,0 +1,26 @@
+[project]
+name = "lab-01-02-precommit-pep8"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Victor R. Jose",email = "jsvictordev@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "lab_01_02_precommit_pep8", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pre-commit (>=4.7.0,<5.0.0)",
+    "black (>=26.10.1,<27.0.0)",
+    "isort (>=9.0.2,<10.0.0)",
+    "ruff (>=0.17.4,<0.18.0)"
+]
