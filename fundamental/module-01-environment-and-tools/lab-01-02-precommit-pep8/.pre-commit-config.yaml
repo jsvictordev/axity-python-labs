@@ -1,0 +1,23 @@
+repos:
+  - repo: local
+    hooks:
+      - id: isort
+        name: isort - Ordenar imports
+        entry: fundamental/module-01-environment-and-tools/lab-01-02-precommit-pep8/.venv/bin/isort
+        language: system
+        files: ^fundamental/module-01-environment-and-tools/lab-01-02-precommit-pep8/.*\.py$
+        pass_filenames: true
+
+      - id: black
+        name: black - Formatear Python
+        entry: fundamental/module-01-environment-and-tools/lab-01-02-precommit-pep8/.venv/bin/black
+        language: system
+        files: ^fundamental/module-01-environment-and-tools/lab-01-02-precommit-pep8/.*\.py$
+        pass_filenames: true
+
+      - id: ruff
+        name: ruff - Validar PEP 8
+        entry: fundamental/module-01-environment-and-tools/lab-01-02-precommit-pep8/.venv/bin/ruff check
+        language: system
+        files: ^fundamental/module-01-environment-and-tools/lab-01-02-precommit-pep8/.*\.py$
+        pass_filenames: true
