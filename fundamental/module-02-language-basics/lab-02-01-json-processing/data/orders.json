@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1001,
+        "customer": "Juan Perez",
+        "email": "juan@example.com",
+        "product": "Laptop",
+        "quantity": 2,
+        "unit_price": 15000,
+        "status": "completed"
+    },
+    {
+        "id": 1002,
+        "customer": "Maria Lopez",
+        "email": "maria@example.com",
+        "product": "Monitor",
+        "quantity": 3,
+        "unit_price": 4500,
+        "status": "pending"
+    },
+    {
+        "id": 1003,
+        "customer": "Juan Perez",
+        "email": "juan@example.com",
+        "product": "Keyboard",
+        "quantity": 2,
+        "unit_price": 1200,
+        "status": "completed"
+    },
+    {
+        "id": 1004,
+        "customer": "Carlos Garcia",
+        "email": "carlos@example.com",
+        "product": "Mouse",
+        "quantity": 5,
+        "unit_price": 500,
+        "status": "cancelled"
+    },
+    {
+        "id": 1005,
+        "customer": "Maria Lopez",
+        "email": "maria@example.com",
+        "product": "Headphones",
+        "quantity": 2,
+        "unit_price": 1800,
+        "status": "completed"
+    }
+]

@@ -1,0 +1,30 @@
+[project]
+name = "lab-02-01-json-processing"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Victor R. Jose",email = "jsvictordev@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "lab_02_01_json_processing", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "black (>=26.10.1,<27.0.0)",
+    "isort (>=9.0.2,<10.0.0)",
+    "ruff (>=0.17.6,<0.18.0)",
+    "pytest (>=9.2.0,<10.0.0)",
+    "pytest-cov (>=7.1.0,<8.0.0)"
+]
+
+[project.scripts]
+orders = "lab_02_01_json_processing.main:main"
